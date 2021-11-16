@@ -1,0 +1,59 @@
+.signUp-heading {
+  width: 253px;
+  height: 40px;
+  left: 40px;
+  top: 106px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.form-control {
+  width: 670px;
+  height: 70px;
+  left: 40px;
+  top: 181px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.date-heading {
+  width: 110px;
+  height: 24px;
+  left: 40px;
+  top: 440px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.date-info {
+  left: 40px;
+  top: 474px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.btn {
+  left: 351px;
+  top: 718px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}

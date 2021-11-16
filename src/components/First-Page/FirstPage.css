@@ -1,0 +1,22 @@
+.logo {
+  margin-top: 100px;
+}
+
+.form-header {
+  left: 744px;
+  top: 137px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 49px;
+  color: #000000;
+}
+
+.btn {
+  height: 60px;
+  left: 735px;
+  top: 412px;
+  background: #1da1f2;
+  border-radius: 76px;
+}
