@@ -31,3 +31,145 @@
   color: #000000;
   opacity: 0.6;
 }
+
+.main-img {
+  max-width: 910px;
+  max-height: 280px;
+}
+
+.main-second-img {
+  left: 370px;
+  transform: translateY(-50%);
+}
+
+.user-name {
+  width: 70px;
+  height: 32px;
+  left: 464px;
+  top: 452px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.user-comment__link {
+  height: 24px;
+  left: 464px;
+  top: 520px;
+  text-decoration: none;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.center-userinfo {
+  margin: 0;
+  width: 250px;
+  height: 24px;
+  left: 932px;
+  top: 559px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.center-userinfo-1::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/location.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.center-userinfo-2::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/telegram.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+.center-userinfo-3::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/birthday.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.center-userinfo-4::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../images/joined-day.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.number-info {
+  height: 24px;
+  left: 464px;
+  top: 598px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.total-info {
+  width: 103px;
+  height: 24px;
+  left: 464px;
+  top: 598px;
+}
+
+.NavLinks__classname {
+  width: 131px;
+  height: 24px;
+  left: 235.67px;
+  top: 0px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.NavLinks__classname + .NavLinks__classname {
+  margin-left: 90px;
+}
+
+.NavLinks__activeclassname {
+  width: 59px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}

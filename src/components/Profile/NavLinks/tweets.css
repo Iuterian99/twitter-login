@@ -1,0 +1,9 @@
+.pinned::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/pin-logo.png");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-position: 70% 11%;
+}

@@ -54,3 +54,24 @@
   color: #000000;
   opacity: 0.6;
 }
+
+.onActive:active {
+  width: 56px;
+  height: 24px;
+  left: 48px;
+  top: 2px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 20px;
+}
+
+.profile-info {
+  margin-top: 200px;
+}
