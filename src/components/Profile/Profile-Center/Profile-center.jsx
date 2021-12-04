@@ -1,13 +1,13 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Switch, Route } from "react-router-dom";
 import "./Profile-center.css";
 
 // Importing images
-import arrow from "../../images/arrow.svg";
-import main from "../../images/main.svg";
-import boburPhoto from "../../images/profile-photo.svg";
+import arrow from "../../../images/arrow.svg";
+import main from "../../../images/main.svg";
+import boburPhoto from "../../../images/profile-photo.svg";
 
 // Importing components
-import Tweets from "./NavLinks/tweets";
+import Tweets from "../NavLinks/tweets";
 function ProfileCenter() {
   return (
     <div className="">
@@ -18,7 +18,7 @@ function ProfileCenter() {
               <img
                 className="arrow-logo"
                 src={arrow}
-                alt="arrow logo"
+                alt="arrow"
                 width="20"
                 height="10"
               />
@@ -32,13 +32,13 @@ function ProfileCenter() {
       </div>
       {/*     ---------  Image second row ------------------------- */}
       <div className="row">
-        <div className="col-12 p-0">
+        <div className="col-12 ps-0">
           <div className="main-top mt-3 pb-5">
             <div className="main-first-img position-relative">
               <img
                 className="main-img d-block p-0 m-0"
                 src={main}
-                alt="main img"
+                alt="main"
                 width="100%"
                 height="100%"
               />
@@ -47,7 +47,7 @@ function ProfileCenter() {
               <img
                 className="bobur-img p-0 m-0"
                 src={boburPhoto}
-                alt="bobur Photo"
+                alt="bobur"
                 width="140"
                 height="140"
               />
@@ -80,14 +80,14 @@ function ProfileCenter() {
 
       {/*     ---------  Adress info row ------------------------- */}
       <div className="row">
-        <div className="col-12 m-0 p-0">
-          <ul className="d-flex list-unstyled flex-wrap ms-3">
+        <div className="col-12 ps-0">
+          <ul className="d-flex list-unstyled flex-wrap ms-4">
             <li className="list-unstyled">
               <p className="center-userinfo center-userinfo-1">Mashag’daman</p>
             </li>
             <li className="list-unstyled d-flex mb-1">
               <span className="center-userinfo-2 m-0 d-inline-block p-0"></span>
-              <Link className="m-0 p-0" to="/">
+              <Link className="m-0 p-0 text-decoration-none" to="/">
                 t.me/boburjon_mavlonov
               </Link>
             </li>
@@ -102,7 +102,7 @@ function ProfileCenter() {
               </p>
             </li>
           </ul>
-          <div className="followers-info d-flex ms-3">
+          <div className="followers-info d-flex ms-4">
             <p className="total-info d-flex">
               <span className="me-1 number-info">67</span>
               Following
@@ -150,7 +150,13 @@ function ProfileCenter() {
 
       {/*     ---------  Directs according to NavLink to Tweets Route ------------------------- */}
       <div className="row">
-        <div className="col-12">{<Tweets />}</div>
+        <div className="col-12 p-0">
+          <Switch>
+            <Route path="/tweets" defaultValue>
+              {<Tweets />}
+            </Route>
+          </Switch>
+        </div>
       </div>
       {/*     ---------  End of container ------------------------- */}
     </div>

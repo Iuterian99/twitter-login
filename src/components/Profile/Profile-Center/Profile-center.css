@@ -86,7 +86,7 @@
 .center-userinfo-1::before {
   content: "";
   display: inline-block;
-  background-image: url("../../images/location.png");
+  background-image: url("../../../images/location.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -95,7 +95,7 @@
 .center-userinfo-2::before {
   content: "";
   display: inline-block;
-  background-image: url("../../images/telegram.png");
+  background-image: url("../../../images/telegram.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -105,16 +105,16 @@
 .center-userinfo-3::before {
   content: "";
   display: inline-block;
-  background-image: url("../../images/birthday.png");
+  background-image: url("../../../images/birthday.png");
   background-repeat: no-repeat;
   width: 20px;
-  height: 20px;
+  height: 21px;
   margin-right: 10px;
 }
 .center-userinfo-4::before {
   content: "";
   display: inline-block;
-  background-image: url("../../images/joined-day.png");
+  background-image: url("../../../images/joined-day.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;

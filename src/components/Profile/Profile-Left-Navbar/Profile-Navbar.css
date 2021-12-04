@@ -1,15 +1,25 @@
 .img-responsive {
-  width: 50px;
-  height: 24px;
-  left: 48px;
-  top: 2px;
+  width: 28px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
+  margin: 0px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.onActive:hover {
+  width: 28px;
+  height: 28px;
+  left: 0px;
+  top: 0px;
   font-family: Segoe UI;
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  flex-grow: 0;
+  margin: 0px 20px;
 }
 
 .btn {
@@ -28,17 +38,25 @@
   top: 892px;
 }
 
-.user-name {
-  width: 45px;
-  height: 21px;
-  left: 230px;
-  top: 895px;
+.users-name {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
   color: #000000;
+}
+
+.users-name::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/threeDots.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 5px;
+  background-position: center;
+  margin-left: 52%;
 }
 
 .username {
@@ -55,23 +73,6 @@
   opacity: 0.6;
 }
 
-.onActive:active {
-  width: 56px;
-  height: 24px;
-  left: 48px;
-  top: 2px;
-  font-family: Segoe UI;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 20px;
-}
-
 .profile-info {
-  margin-top: 200px;
+  margin-top: 300px;
 }

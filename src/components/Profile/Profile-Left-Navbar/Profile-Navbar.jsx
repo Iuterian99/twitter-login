@@ -1,31 +1,32 @@
 import "./Profile-Navbar.css";
+import { NavLink, Link } from "react-router-dom";
 
 // Importing images
-import { NavLink, Link } from "react-router-dom";
-import profileLogo from "../../images/twitter-logo.svg";
-import home from "../../images/home.svg";
-import explore from "../../images/explore.svg";
-import notification from "../../images/notifications.svg";
-import messages from "../../images/messages.svg";
-import bookmarks from "../../images/bookmarks.svg";
-import lists from "../../images/lists.svg";
-import profile from "../../images/profile.svg";
-import more from "../../images/more.svg";
-import BoburPhoto from "../../images/profile-photo.svg";
+import profileLogo from "../../../images/twitter-logo.svg";
+import home from "../../../images/home.svg";
+import explore from "../../../images/explore.svg";
+import notification from "../../../images/notifications.svg";
+import messages from "../../../images/messages.svg";
+import bookmarks from "../../../images/bookmarks.svg";
+import lists from "../../../images/lists.svg";
+import profile from "../../../images/profile.svg";
+import more from "../../../images/more.svg";
+import BoburPhoto from "../../../images/profile-photo.svg";
 
 // Importing Components
-import ProfileCenter from "./Profile-center";
+import ProfileCenter from "../Profile-Center/Profile-center";
+import Right from "../Profile-Right/Right";
 
 function ProfileNavbar() {
   return (
-    <div className="container">
+    <div className="container p-0">
       <div className="row">
         <div className="col-3">
           <div className="border-end">
             <img
               className="img-responsive mt-4 mb-2"
               src={profileLogo}
-              alt="Twitter Logo"
+              alt="Twitter"
               width="40"
               height="33"
             />
@@ -39,9 +40,9 @@ function ProfileNavbar() {
                   <img
                     className="img-responsive"
                     src={home}
-                    alt="Home logo"
-                    width="26"
-                    height="24"
+                    alt="Home"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Home</span>
                 </NavLink>
@@ -56,8 +57,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={explore}
                     alt="explore logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Explore</span>
                 </NavLink>
@@ -72,8 +73,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={notification}
                     alt="notification logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Notifications</span>
                 </NavLink>
@@ -88,8 +89,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={messages}
                     alt="messages logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Messages</span>
                 </NavLink>
@@ -104,8 +105,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={bookmarks}
                     alt="bookmarks logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Bookmarks</span>
                 </NavLink>
@@ -120,8 +121,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={lists}
                     alt="lists logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Lists</span>
                 </NavLink>
@@ -136,8 +137,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={profile}
                     alt="profile logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">Profile</span>
                 </NavLink>
@@ -152,8 +153,8 @@ function ProfileNavbar() {
                     className="img-responsive"
                     src={more}
                     alt="more logo"
-                    width="26"
-                    height="24"
+                    width="28"
+                    height="28"
                   />
                   <span className="text-dark ms-3">More</span>
                 </NavLink>
@@ -166,12 +167,12 @@ function ProfileNavbar() {
               <img
                 className="img-responsive userFoto"
                 src={BoburPhoto}
-                alt="Bobur Photo"
+                alt="Bobur"
                 width="50"
                 height="50"
               />
               <span className="UserNames ms-2">
-                <h4 className="user-name m-0 p-0">Bobur</h4>
+                <h4 className="users-name m-0 p-0">Bobur</h4>
                 <Link className="username d-block text-decoration-none" to="/">
                   @bobur_mavlonov
                 </Link>
@@ -181,7 +182,7 @@ function ProfileNavbar() {
         </div>
         <div className="col-6 p-0">{<ProfileCenter />}</div>
 
-        <div className="col-3 p-0 m-0"></div>
+        <div className="col-3 p-0">{<Right />}</div>
       </div>
     </div>
   );

@@ -1,9 +1,105 @@
+.pinned {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+}
+
 .pinned::before {
   content: "";
   display: inline-block;
   background-image: url("../../../images/pin-logo.png");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
-  background-position: 70% 11%;
+  width: 15px;
+  height: 25px;
+  background-position: center 4px;
+  margin-right: 12px;
+}
+
+.user-name {
+  width: 58px;
+  height: 27px;
+  left: 0px;
+  top: 0px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.item__span {
+  display: flex;
+  /* width: 18px;
+  height: 21px; */
+  /* left: 34px;
+  top: 1.5px; */
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #536471;
+}
+
+.item__span-1::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/comment.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center center;
+}
+.item__span-2::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/retweet.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center center;
+}
+.item__span-3::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/like-logo.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  background-position: center center;
+}
+.item__span-4::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/share.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.item__span-5::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/statistics.svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.top-word::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../images/threeDots.png");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 5px;
+  margin-left: 50%;
 }
